@@ -1,0 +1,68 @@
+Secure DevOps Practices
+
+Introduction
+
+Secure DevOps, also known as DevSecOps, integrates security into the DevOps pipeline to ensure that applications and infrastructure are secure by design. It emphasizes automation, continuous monitoring, and collaboration between development, security, and operations teams.
+
+
+---
+
+Key Secure DevOps Practices
+
+1. Shift Left Security
+
+Implement security early in the development lifecycle.
+
+Use static application security testing (SAST) and software composition analysis (SCA) during code development.
+
+
+2. Secure Coding Practices
+
+Follow secure coding guidelines (e.g., OWASP Top 10).
+
+Enforce code reviews with security checks.
+
+Use linters and security scanning tools (e.g., ESLint, Bandit, SonarQube).
+
+
+3. Infrastructure as Code (IaC) Security
+
+Scan IaC templates (Terraform, CloudFormation, Kubernetes YAML) for vulnerabilities.
+
+Use tools like Checkov, tfsec, and KICS to enforce security policies.
+
+Implement least privilege access in cloud IAM roles.
+
+
+4. Automated Security Testing
+
+Integrate SAST, DAST (Dynamic Application Security Testing), and IAST (Interactive Application Security Testing) into CI/CD pipelines.
+
+Use tools like ZAP, Burp Suite, OWASP Dependency-Check for automated scanning.
+
+
+5. Secrets Management
+
+Never store secrets in code repositories.
+
+Use secret management tools like HashiCorp Vault, AWS Secrets Manager, or Kubernetes Secrets.
+
+Rotate credentials periodically.
+
+
+6. Secure CI/CD Pipelines
+
+Sign and verify artifacts to prevent supply chain attacks.
+
+Use tools like Cosign, Sigstore, and in-toto for software integrity.
+
+Apply least privilege principles in CI/CD service accounts.
+
+
+7. Container Security
+
+Scan container images for vulnerabilities using Trivy, Clair, or Grype.
+
+Use minimal, trusted base images (e.g., Distroless, Alpine).
+
+Enforce runtime security with tools
